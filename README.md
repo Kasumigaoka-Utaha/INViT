@@ -1,4 +1,5 @@
-# INViT Readme (Pre-Release)
+# INViT
+Official Implementation of paper: INViT: A Generalizable Routing Problem Solver with Invariant Nested View Transformer
 
 ## Installations
 
