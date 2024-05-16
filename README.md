@@ -97,13 +97,13 @@ from load_data import load_instances_with_baselines
 To train TSP,
 
 ```
-python train_tsp.py --data_path={} [--]
+python train.py --problem TSP --data_path={} [--]
 ```
 
 To train CVRP,
 
 ```
-python train_vrp.py --data_path={} [--]
+python train.py --problem CVRP --data_path={} [--]
 ```
 
 ### Evaluation
@@ -111,13 +111,13 @@ python train_vrp.py --data_path={} [--]
 We have provided automatic test after every training. If you want to test the performance independently, for TSP,
 
 ```
-python train_tsp.py --nb_epochs 0 --data_path={} [--] --checkpoint_model={} [--] 
+python train.py --problem TSP --nb_epochs 0 --data_path={} [--] --checkpoint_model={} [--] 
 ```
 
 for CVRP,
 
 ```
-python train_vrp.py --nb_epochs 0 --data_path={} [--] --checkpoint_model={} [--] 
+python train.py --problem CVRP --nb_epochs 0 --data_path={} [--] --checkpoint_model={} [--] 
 ```
 
 Note that before testing the model, the parameter should be consistent with the logs of pretrained checkpoint.
