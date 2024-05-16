@@ -34,9 +34,8 @@ pip install tqdm==4.66.1
 ```
 
 **Step 4 - download the dataset**
-```bash
-wget https://drive.google.com/uc?id=1meYCOULaX_ckosg46Bv1rK8f5sbxMHHV&export=download
-```
+
+Dataset is available on https://drive.google.com/uc?id=1meYCOULaX_ckosg46Bv1rK8f5sbxMHHV&export=download
 
 
 ## Execution
