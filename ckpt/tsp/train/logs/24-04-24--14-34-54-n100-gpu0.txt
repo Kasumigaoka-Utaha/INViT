@@ -1,0 +1,375 @@
+24-04-24--14-34-54
+
+aug=mix
+bsz=128
+nb_nodes=100
+candidate_lr=2e-05
+model_lr=0.0001
+nb_batch_per_epoch=300
+checkpoint_model=n
+checkpoint_candidate=n
+checkpoint_model_pretrain=n
+checkpoint_candidate_pretrain=n
+aug_num=16
+test_aug_num=16
+num_state_encoder=3
+dim_emb=128
+dim_ff=512
+nb_heads=8
+action_k=15
+nb_layers_state_encoder=2
+nb_layers_action_encoder=4
+nb_layers_decoder=3
+nb_candidate_layers=3
+nb_epochs=400
+problem=tsp
+gamma=0.99
+dim_input_nodes=2
+batchnorm=False
+gpu_id=0
+loss_type=n
+train_joint=n
+nb_batch_eval=80
+if_use_local_mask=False
+if_agg_whole_graph=False
+if_pretrain_encoder=True
+if_aug=True
+if_test=True
+tol=0.001
+data_path=./
+state_k=[35, 50, 65]
+
+
+Epoch: 0, epoch time: 18.543min, tot time: 0.013day, L_base: 25.209, L_train: 13.992, update_model: True.
+Epoch: 1, epoch time: 18.293min, tot time: 0.028day, L_base: 13.982, L_train: 10.295, update_model: True.
+Epoch: 2, epoch time: 18.142min, tot time: 0.043day, L_base: 10.298, L_train: 9.418, update_model: True.
+Epoch: 3, epoch time: 18.066min, tot time: 0.058day, L_base: 9.401, L_train: 9.083, update_model: True.
+Epoch: 4, epoch time: 18.002min, tot time: 0.073day, L_base: 9.103, L_train: 8.901, update_model: True.
+Epoch: 5, epoch time: 17.963min, tot time: 0.088day, L_base: 8.879, L_train: 8.510, update_model: True.
+Epoch: 6, epoch time: 17.842min, tot time: 0.103day, L_base: 8.546, L_train: 8.479, update_model: True.
+Epoch: 7, epoch time: 17.769min, tot time: 0.118day, L_base: 8.472, L_train: 8.267, update_model: True.
+Epoch: 8, epoch time: 17.817min, tot time: 0.133day, L_base: 8.281, L_train: 8.257, update_model: True.
+Epoch: 9, epoch time: 17.801min, tot time: 0.148day, L_base: 8.253, L_train: 8.174, update_model: True.
+Epoch: 10, epoch time: 17.874min, tot time: 0.163day, L_base: 8.197, L_train: 8.233, update_model: False.
+Epoch: 11, epoch time: 17.668min, tot time: 0.178day, L_base: 8.181, L_train: 8.144, update_model: True.
+Epoch: 12, epoch time: 18.026min, tot time: 0.193day, L_base: 8.160, L_train: 8.200, update_model: False.
+Epoch: 13, epoch time: 18.036min, tot time: 0.208day, L_base: 8.144, L_train: 8.216, update_model: False.
+Epoch: 14, epoch time: 18.001min, tot time: 0.223day, L_base: 8.148, L_train: 8.145, update_model: True.
+Epoch: 15, epoch time: 18.245min, tot time: 0.238day, L_base: 8.162, L_train: 8.138, update_model: True.
+Epoch: 16, epoch time: 18.247min, tot time: 0.254day, L_base: 8.130, L_train: 8.122, update_model: True.
+Epoch: 17, epoch time: 17.672min, tot time: 0.268day, L_base: 8.114, L_train: 8.159, update_model: False.
+Epoch: 18, epoch time: 17.557min, tot time: 0.283day, L_base: 8.088, L_train: 8.116, update_model: False.
+Epoch: 19, epoch time: 17.564min, tot time: 0.298day, L_base: 8.108, L_train: 8.109, update_model: False.
+Epoch: 20, epoch time: 17.544min, tot time: 0.313day, L_base: 8.096, L_train: 8.071, update_model: True.
+Epoch: 21, epoch time: 17.736min, tot time: 0.327day, L_base: 8.074, L_train: 8.074, update_model: False.
+Epoch: 22, epoch time: 17.969min, tot time: 0.342day, L_base: 8.086, L_train: 8.120, update_model: False.
+Epoch: 23, epoch time: 17.835min, tot time: 0.357day, L_base: 8.054, L_train: 8.080, update_model: False.
+Epoch: 24, epoch time: 18.193min, tot time: 0.373day, L_base: 8.082, L_train: 8.094, update_model: False.
+Epoch: 25, epoch time: 18.209min, tot time: 0.388day, L_base: 8.081, L_train: 8.095, update_model: False.
+Epoch: 26, epoch time: 18.126min, tot time: 0.403day, L_base: 8.087, L_train: 8.099, update_model: False.
+Epoch: 27, epoch time: 18.105min, tot time: 0.418day, L_base: 8.077, L_train: 8.048, update_model: True.
+Epoch: 28, epoch time: 18.290min, tot time: 0.433day, L_base: 8.051, L_train: 8.124, update_model: False.
+Epoch: 29, epoch time: 18.158min, tot time: 0.449day, L_base: 8.040, L_train: 8.074, update_model: False.
+Epoch: 30, epoch time: 18.169min, tot time: 0.464day, L_base: 8.052, L_train: 8.043, update_model: True.
+Epoch: 31, epoch time: 17.857min, tot time: 0.479day, L_base: 8.052, L_train: 8.104, update_model: False.
+Epoch: 32, epoch time: 17.852min, tot time: 0.494day, L_base: 8.049, L_train: 8.059, update_model: False.
+Epoch: 33, epoch time: 18.074min, tot time: 0.509day, L_base: 8.027, L_train: 8.045, update_model: False.
+Epoch: 34, epoch time: 18.143min, tot time: 0.524day, L_base: 8.053, L_train: 8.075, update_model: False.
+Epoch: 35, epoch time: 18.182min, tot time: 0.539day, L_base: 8.034, L_train: 8.047, update_model: False.
+Epoch: 36, epoch time: 18.310min, tot time: 0.554day, L_base: 8.043, L_train: 8.183, update_model: False.
+Epoch: 37, epoch time: 18.170min, tot time: 0.570day, L_base: 8.056, L_train: 8.191, update_model: False.
+Epoch: 38, epoch time: 17.996min, tot time: 0.585day, L_base: 8.044, L_train: 8.075, update_model: False.
+Epoch: 39, epoch time: 18.139min, tot time: 0.600day, L_base: 8.043, L_train: 8.024, update_model: True.
+Epoch: 40, epoch time: 17.888min, tot time: 0.615day, L_base: 8.035, L_train: 8.042, update_model: False.
+Epoch: 41, epoch time: 17.957min, tot time: 0.630day, L_base: 8.036, L_train: 8.056, update_model: False.
+Epoch: 42, epoch time: 17.972min, tot time: 0.645day, L_base: 8.034, L_train: 8.069, update_model: False.
+Epoch: 43, epoch time: 18.545min, tot time: 0.660day, L_base: 8.012, L_train: 8.014, update_model: False.
+Epoch: 44, epoch time: 18.558min, tot time: 0.676day, L_base: 8.030, L_train: 8.056, update_model: False.
+Epoch: 45, epoch time: 18.176min, tot time: 0.691day, L_base: 8.037, L_train: 8.031, update_model: True.
+Epoch: 46, epoch time: 17.936min, tot time: 0.706day, L_base: 8.030, L_train: 8.105, update_model: False.
+Epoch: 47, epoch time: 18.005min, tot time: 0.721day, L_base: 8.015, L_train: 8.040, update_model: False.
+Epoch: 48, epoch time: 18.109min, tot time: 0.736day, L_base: 8.026, L_train: 8.047, update_model: False.
+Epoch: 49, epoch time: 17.741min, tot time: 0.751day, L_base: 8.016, L_train: 8.029, update_model: False.
+Epoch: 50, epoch time: 17.756min, tot time: 0.766day, L_base: 8.028, L_train: 8.035, update_model: False.
+Epoch: 51, epoch time: 17.772min, tot time: 0.781day, L_base: 8.035, L_train: 8.022, update_model: True.
+Epoch: 52, epoch time: 17.714min, tot time: 0.796day, L_base: 7.992, L_train: 8.001, update_model: False.
+Epoch: 53, epoch time: 17.719min, tot time: 0.811day, L_base: 8.006, L_train: 8.011, update_model: False.
+Epoch: 54, epoch time: 17.717min, tot time: 0.825day, L_base: 8.012, L_train: 8.014, update_model: False.
+Epoch: 55, epoch time: 17.989min, tot time: 0.840day, L_base: 8.003, L_train: 8.001, update_model: True.
+Epoch: 56, epoch time: 17.757min, tot time: 0.855day, L_base: 8.007, L_train: 7.999, update_model: True.
+Epoch: 57, epoch time: 17.815min, tot time: 0.870day, L_base: 7.997, L_train: 8.025, update_model: False.
+Epoch: 58, epoch time: 17.714min, tot time: 0.885day, L_base: 8.019, L_train: 8.036, update_model: False.
+Epoch: 59, epoch time: 17.729min, tot time: 0.900day, L_base: 8.006, L_train: 8.025, update_model: False.
+Epoch: 60, epoch time: 17.778min, tot time: 0.915day, L_base: 8.002, L_train: 8.037, update_model: False.
+Epoch: 61, epoch time: 17.832min, tot time: 0.930day, L_base: 8.004, L_train: 8.014, update_model: False.
+Epoch: 62, epoch time: 18.083min, tot time: 0.945day, L_base: 8.000, L_train: 8.016, update_model: False.
+Epoch: 63, epoch time: 18.012min, tot time: 0.960day, L_base: 8.000, L_train: 8.027, update_model: False.
+Epoch: 64, epoch time: 17.969min, tot time: 0.975day, L_base: 8.006, L_train: 8.016, update_model: False.
+Epoch: 65, epoch time: 17.901min, tot time: 0.990day, L_base: 8.007, L_train: 8.016, update_model: False.
+Epoch: 66, epoch time: 18.091min, tot time: 1.005day, L_base: 8.006, L_train: 8.005, update_model: True.
+Epoch: 67, epoch time: 18.255min, tot time: 1.020day, L_base: 7.990, L_train: 7.986, update_model: True.
+Epoch: 68, epoch time: 18.177min, tot time: 1.035day, L_base: 7.982, L_train: 7.985, update_model: False.
+Epoch: 69, epoch time: 18.248min, tot time: 1.051day, L_base: 8.005, L_train: 8.035, update_model: False.
+Epoch: 70, epoch time: 18.274min, tot time: 1.066day, L_base: 7.985, L_train: 8.006, update_model: False.
+Epoch: 71, epoch time: 18.528min, tot time: 1.081day, L_base: 7.994, L_train: 8.004, update_model: False.
+Epoch: 72, epoch time: 17.701min, tot time: 1.096day, L_base: 8.004, L_train: 8.001, update_model: True.
+Epoch: 73, epoch time: 17.677min, tot time: 1.111day, L_base: 8.015, L_train: 8.004, update_model: True.
+Epoch: 74, epoch time: 24.613min, tot time: 1.131day, L_base: 7.966, L_train: 7.976, update_model: False.
+Epoch: 75, epoch time: 17.915min, tot time: 1.146day, L_base: 7.990, L_train: 8.014, update_model: False.
+Epoch: 76, epoch time: 18.084min, tot time: 1.161day, L_base: 7.995, L_train: 8.005, update_model: False.
+Epoch: 77, epoch time: 18.097min, tot time: 1.176day, L_base: 8.000, L_train: 8.035, update_model: False.
+Epoch: 78, epoch time: 18.023min, tot time: 1.191day, L_base: 7.983, L_train: 8.000, update_model: False.
+Epoch: 79, epoch time: 17.783min, tot time: 1.206day, L_base: 7.978, L_train: 7.999, update_model: False.
+Epoch: 80, epoch time: 17.907min, tot time: 1.221day, L_base: 7.994, L_train: 7.995, update_model: False.
+Epoch: 81, epoch time: 17.878min, tot time: 1.236day, L_base: 7.988, L_train: 8.000, update_model: False.
+Epoch: 82, epoch time: 18.019min, tot time: 1.251day, L_base: 8.002, L_train: 8.003, update_model: False.
+Epoch: 83, epoch time: 17.756min, tot time: 1.266day, L_base: 8.000, L_train: 8.019, update_model: False.
+Epoch: 84, epoch time: 17.706min, tot time: 1.281day, L_base: 7.987, L_train: 7.980, update_model: True.
+Epoch: 85, epoch time: 18.013min, tot time: 1.296day, L_base: 7.974, L_train: 7.991, update_model: False.
+Epoch: 86, epoch time: 17.924min, tot time: 1.311day, L_base: 7.980, L_train: 7.994, update_model: False.
+Epoch: 87, epoch time: 18.164min, tot time: 1.326day, L_base: 7.949, L_train: 7.966, update_model: False.
+Epoch: 88, epoch time: 18.075min, tot time: 1.341day, L_base: 7.974, L_train: 7.979, update_model: False.
+Epoch: 89, epoch time: 18.137min, tot time: 1.356day, L_base: 7.990, L_train: 7.996, update_model: False.
+Epoch: 90, epoch time: 17.951min, tot time: 1.371day, L_base: 7.986, L_train: 8.003, update_model: False.
+Epoch: 91, epoch time: 18.459min, tot time: 1.387day, L_base: 7.995, L_train: 8.004, update_model: False.
+Epoch: 92, epoch time: 18.473min, tot time: 1.402day, L_base: 7.974, L_train: 7.995, update_model: False.
+Epoch: 93, epoch time: 18.422min, tot time: 1.418day, L_base: 7.979, L_train: 7.980, update_model: False.
+Epoch: 94, epoch time: 17.865min, tot time: 1.433day, L_base: 7.997, L_train: 8.007, update_model: False.
+Epoch: 95, epoch time: 17.904min, tot time: 1.448day, L_base: 7.996, L_train: 8.012, update_model: False.
+Epoch: 96, epoch time: 18.409min, tot time: 1.463day, L_base: 7.967, L_train: 7.957, update_model: True.
+Epoch: 97, epoch time: 18.309min, tot time: 1.478day, L_base: 7.960, L_train: 7.979, update_model: False.
+Epoch: 98, epoch time: 18.409min, tot time: 1.494day, L_base: 7.956, L_train: 7.978, update_model: False.
+Epoch: 99, epoch time: 17.908min, tot time: 1.509day, L_base: 7.979, L_train: 7.991, update_model: False.
+Epoch: 100, epoch time: 17.855min, tot time: 1.524day, L_base: 7.970, L_train: 7.978, update_model: False.
+Epoch: 101, epoch time: 18.243min, tot time: 1.539day, L_base: 7.962, L_train: 7.968, update_model: False.
+Epoch: 102, epoch time: 18.010min, tot time: 1.554day, L_base: 7.971, L_train: 7.976, update_model: False.
+Epoch: 103, epoch time: 17.952min, tot time: 1.569day, L_base: 7.977, L_train: 7.977, update_model: False.
+Epoch: 104, epoch time: 18.088min, tot time: 1.584day, L_base: 7.978, L_train: 7.981, update_model: False.
+Epoch: 105, epoch time: 18.045min, tot time: 1.599day, L_base: 7.988, L_train: 8.016, update_model: False.
+Epoch: 106, epoch time: 18.013min, tot time: 1.614day, L_base: 7.974, L_train: 7.975, update_model: False.
+Epoch: 107, epoch time: 17.996min, tot time: 1.629day, L_base: 7.975, L_train: 7.971, update_model: True.
+Epoch: 108, epoch time: 17.930min, tot time: 1.644day, L_base: 7.975, L_train: 7.970, update_model: True.
+Epoch: 109, epoch time: 18.209min, tot time: 1.660day, L_base: 7.940, L_train: 7.943, update_model: False.
+Epoch: 110, epoch time: 17.968min, tot time: 1.675day, L_base: 7.960, L_train: 7.964, update_model: False.
+Epoch: 111, epoch time: 18.031min, tot time: 1.690day, L_base: 7.968, L_train: 7.973, update_model: False.
+Epoch: 112, epoch time: 17.980min, tot time: 1.705day, L_base: 7.964, L_train: 7.964, update_model: False.
+Epoch: 113, epoch time: 17.814min, tot time: 1.720day, L_base: 7.963, L_train: 7.962, update_model: False.
+Epoch: 114, epoch time: 17.763min, tot time: 1.735day, L_base: 7.984, L_train: 7.995, update_model: False.
+Epoch: 115, epoch time: 17.777min, tot time: 1.749day, L_base: 7.967, L_train: 7.963, update_model: True.
+Epoch: 116, epoch time: 17.922min, tot time: 1.764day, L_base: 7.957, L_train: 7.966, update_model: False.
+Epoch: 117, epoch time: 17.888min, tot time: 1.779day, L_base: 7.974, L_train: 7.980, update_model: False.
+Epoch: 118, epoch time: 17.721min, tot time: 1.794day, L_base: 7.961, L_train: 7.960, update_model: True.
+Epoch: 119, epoch time: 18.262min, tot time: 1.809day, L_base: 7.963, L_train: 7.962, update_model: True.
+Epoch: 120, epoch time: 18.245min, tot time: 1.825day, L_base: 7.966, L_train: 7.971, update_model: False.
+Epoch: 121, epoch time: 18.355min, tot time: 1.840day, L_base: 7.960, L_train: 7.955, update_model: True.
+Epoch: 122, epoch time: 17.792min, tot time: 1.855day, L_base: 7.976, L_train: 7.980, update_model: False.
+Epoch: 123, epoch time: 17.731min, tot time: 1.870day, L_base: 7.952, L_train: 7.956, update_model: False.
+Epoch: 124, epoch time: 17.831min, tot time: 1.885day, L_base: 7.958, L_train: 7.961, update_model: False.
+Epoch: 125, epoch time: 18.486min, tot time: 1.900day, L_base: 7.970, L_train: 7.977, update_model: False.
+Epoch: 126, epoch time: 18.146min, tot time: 1.915day, L_base: 7.970, L_train: 7.970, update_model: False.
+Epoch: 127, epoch time: 18.102min, tot time: 1.930day, L_base: 7.951, L_train: 7.953, update_model: False.
+Epoch: 128, epoch time: 18.128min, tot time: 1.945day, L_base: 7.975, L_train: 7.981, update_model: False.
+Epoch: 129, epoch time: 18.093min, tot time: 1.961day, L_base: 7.960, L_train: 7.966, update_model: False.
+Epoch: 130, epoch time: 18.040min, tot time: 1.976day, L_base: 7.962, L_train: 7.956, update_model: True.
+Epoch: 131, epoch time: 18.328min, tot time: 1.991day, L_base: 7.974, L_train: 7.972, update_model: True.
+Epoch: 132, epoch time: 18.285min, tot time: 2.006day, L_base: 7.971, L_train: 7.977, update_model: False.
+Epoch: 133, epoch time: 18.264min, tot time: 2.022day, L_base: 7.950, L_train: 7.956, update_model: False.
+Epoch: 134, epoch time: 18.285min, tot time: 2.037day, L_base: 7.959, L_train: 7.961, update_model: False.
+Epoch: 135, epoch time: 18.387min, tot time: 2.052day, L_base: 7.948, L_train: 7.942, update_model: True.
+Epoch: 136, epoch time: 18.244min, tot time: 2.068day, L_base: 7.965, L_train: 7.962, update_model: True.
+Epoch: 137, epoch time: 18.018min, tot time: 2.083day, L_base: 7.964, L_train: 7.959, update_model: True.
+Epoch: 138, epoch time: 18.000min, tot time: 2.098day, L_base: 7.950, L_train: 7.966, update_model: False.
+Epoch: 139, epoch time: 17.980min, tot time: 2.113day, L_base: 7.978, L_train: 7.975, update_model: True.
+Epoch: 140, epoch time: 18.287min, tot time: 2.128day, L_base: 7.953, L_train: 7.958, update_model: False.
+Epoch: 141, epoch time: 18.044min, tot time: 2.143day, L_base: 7.956, L_train: 7.963, update_model: False.
+Epoch: 142, epoch time: 18.048min, tot time: 2.158day, L_base: 7.963, L_train: 7.969, update_model: False.
+Epoch: 143, epoch time: 18.026min, tot time: 2.174day, L_base: 7.957, L_train: 7.961, update_model: False.
+Epoch: 144, epoch time: 18.064min, tot time: 2.189day, L_base: 7.953, L_train: 7.954, update_model: False.
+Epoch: 145, epoch time: 17.792min, tot time: 2.204day, L_base: 7.945, L_train: 7.952, update_model: False.
+Epoch: 146, epoch time: 18.017min, tot time: 2.219day, L_base: 7.947, L_train: 7.961, update_model: False.
+Epoch: 147, epoch time: 17.684min, tot time: 2.233day, L_base: 7.955, L_train: 7.959, update_model: False.
+Epoch: 148, epoch time: 17.726min, tot time: 2.248day, L_base: 7.957, L_train: 7.962, update_model: False.
+Epoch: 149, epoch time: 18.419min, tot time: 2.264day, L_base: 7.946, L_train: 7.947, update_model: False.
+Epoch: 150, epoch time: 18.085min, tot time: 2.279day, L_base: 7.948, L_train: 7.945, update_model: True.
+Epoch: 151, epoch time: 17.964min, tot time: 2.294day, L_base: 7.950, L_train: 7.951, update_model: False.
+Epoch: 152, epoch time: 18.011min, tot time: 2.309day, L_base: 7.948, L_train: 7.962, update_model: False.
+Epoch: 153, epoch time: 18.015min, tot time: 2.324day, L_base: 7.938, L_train: 7.939, update_model: False.
+Epoch: 154, epoch time: 18.015min, tot time: 2.339day, L_base: 7.939, L_train: 7.937, update_model: True.
+Epoch: 155, epoch time: 17.968min, tot time: 2.354day, L_base: 7.957, L_train: 7.955, update_model: True.
+Epoch: 156, epoch time: 17.912min, tot time: 2.369day, L_base: 7.949, L_train: 7.948, update_model: True.
+Epoch: 157, epoch time: 18.010min, tot time: 2.384day, L_base: 7.954, L_train: 7.953, update_model: False.
+Epoch: 158, epoch time: 17.795min, tot time: 2.399day, L_base: 7.936, L_train: 7.941, update_model: False.
+Epoch: 159, epoch time: 17.728min, tot time: 2.414day, L_base: 7.941, L_train: 7.936, update_model: True.
+Epoch: 160, epoch time: 17.847min, tot time: 2.429day, L_base: 7.953, L_train: 7.946, update_model: True.
+Epoch: 161, epoch time: 17.730min, tot time: 2.443day, L_base: 7.938, L_train: 7.934, update_model: True.
+Epoch: 162, epoch time: 17.662min, tot time: 2.458day, L_base: 7.939, L_train: 7.941, update_model: False.
+Epoch: 163, epoch time: 17.650min, tot time: 2.473day, L_base: 7.941, L_train: 7.944, update_model: False.
+Epoch: 164, epoch time: 17.632min, tot time: 2.488day, L_base: 7.953, L_train: 7.964, update_model: False.
+Epoch: 165, epoch time: 17.661min, tot time: 2.502day, L_base: 7.945, L_train: 7.958, update_model: False.
+Epoch: 166, epoch time: 17.646min, tot time: 2.517day, L_base: 7.945, L_train: 7.942, update_model: True.
+Epoch: 167, epoch time: 17.677min, tot time: 2.532day, L_base: 7.950, L_train: 7.945, update_model: True.
+Epoch: 168, epoch time: 17.643min, tot time: 2.547day, L_base: 7.951, L_train: 7.955, update_model: False.
+Epoch: 169, epoch time: 17.691min, tot time: 2.561day, L_base: 7.940, L_train: 7.944, update_model: False.
+Epoch: 170, epoch time: 17.654min, tot time: 2.576day, L_base: 7.946, L_train: 7.947, update_model: False.
+Epoch: 171, epoch time: 17.645min, tot time: 2.591day, L_base: 7.949, L_train: 7.948, update_model: True.
+Epoch: 172, epoch time: 17.634min, tot time: 2.606day, L_base: 7.932, L_train: 7.924, update_model: True.
+Epoch: 173, epoch time: 17.829min, tot time: 2.621day, L_base: 7.930, L_train: 7.934, update_model: False.
+Epoch: 174, epoch time: 17.841min, tot time: 2.635day, L_base: 7.946, L_train: 7.948, update_model: False.
+Epoch: 175, epoch time: 17.837min, tot time: 2.650day, L_base: 7.959, L_train: 7.970, update_model: False.
+Epoch: 176, epoch time: 17.849min, tot time: 2.665day, L_base: 7.957, L_train: 7.951, update_model: True.
+Epoch: 177, epoch time: 17.830min, tot time: 2.680day, L_base: 7.937, L_train: 7.938, update_model: False.
+Epoch: 178, epoch time: 17.643min, tot time: 2.695day, L_base: 7.933, L_train: 7.930, update_model: True.
+Epoch: 179, epoch time: 17.640min, tot time: 2.710day, L_base: 7.948, L_train: 7.948, update_model: False.
+Epoch: 180, epoch time: 17.634min, tot time: 2.724day, L_base: 7.928, L_train: 7.930, update_model: False.
+Epoch: 181, epoch time: 17.633min, tot time: 2.739day, L_base: 7.945, L_train: 7.949, update_model: False.
+Epoch: 182, epoch time: 17.568min, tot time: 2.754day, L_base: 7.935, L_train: 7.935, update_model: False.
+Epoch: 183, epoch time: 17.380min, tot time: 2.768day, L_base: 7.936, L_train: 7.938, update_model: False.
+Epoch: 184, epoch time: 17.306min, tot time: 2.783day, L_base: 7.938, L_train: 7.950, update_model: False.
+Epoch: 185, epoch time: 17.702min, tot time: 2.798day, L_base: 7.951, L_train: 7.956, update_model: False.
+Epoch: 186, epoch time: 17.702min, tot time: 2.812day, L_base: 7.927, L_train: 7.931, update_model: False.
+Epoch: 187, epoch time: 17.663min, tot time: 2.827day, L_base: 7.945, L_train: 7.947, update_model: False.
+Epoch: 188, epoch time: 17.958min, tot time: 2.842day, L_base: 7.938, L_train: 7.938, update_model: False.
+Epoch: 189, epoch time: 18.002min, tot time: 2.857day, L_base: 7.953, L_train: 7.956, update_model: False.
+Epoch: 190, epoch time: 18.001min, tot time: 2.872day, L_base: 7.957, L_train: 7.950, update_model: True.
+Epoch: 191, epoch time: 17.930min, tot time: 2.888day, L_base: 7.919, L_train: 7.924, update_model: False.
+Epoch: 192, epoch time: 18.185min, tot time: 2.903day, L_base: 7.941, L_train: 7.941, update_model: False.
+Epoch: 193, epoch time: 17.982min, tot time: 2.918day, L_base: 7.934, L_train: 7.941, update_model: False.
+Epoch: 194, epoch time: 17.793min, tot time: 2.933day, L_base: 7.954, L_train: 7.970, update_model: False.
+Epoch: 195, epoch time: 17.714min, tot time: 2.948day, L_base: 7.937, L_train: 7.942, update_model: False.
+Epoch: 196, epoch time: 17.716min, tot time: 2.962day, L_base: 7.924, L_train: 7.927, update_model: False.
+Epoch: 197, epoch time: 17.712min, tot time: 2.977day, L_base: 7.955, L_train: 7.956, update_model: False.
+Epoch: 198, epoch time: 17.701min, tot time: 2.992day, L_base: 7.946, L_train: 7.944, update_model: True.
+Epoch: 199, epoch time: 17.773min, tot time: 3.007day, L_base: 7.910, L_train: 7.912, update_model: False.
+Epoch: 200, epoch time: 17.819min, tot time: 3.022day, L_base: 7.926, L_train: 7.926, update_model: False.
+Epoch: 201, epoch time: 17.905min, tot time: 3.037day, L_base: 7.954, L_train: 7.954, update_model: False.
+Epoch: 202, epoch time: 17.752min, tot time: 3.052day, L_base: 7.951, L_train: 7.959, update_model: False.
+Epoch: 203, epoch time: 17.821min, tot time: 3.067day, L_base: 7.944, L_train: 7.940, update_model: True.
+Epoch: 204, epoch time: 17.836min, tot time: 3.081day, L_base: 7.949, L_train: 7.950, update_model: False.
+Epoch: 205, epoch time: 17.692min, tot time: 3.096day, L_base: 7.925, L_train: 7.920, update_model: True.
+Epoch: 206, epoch time: 17.712min, tot time: 3.111day, L_base: 7.932, L_train: 7.930, update_model: True.
+Epoch: 207, epoch time: 17.932min, tot time: 3.126day, L_base: 7.945, L_train: 7.943, update_model: True.
+Epoch: 208, epoch time: 17.969min, tot time: 3.141day, L_base: 7.942, L_train: 7.939, update_model: True.
+Epoch: 209, epoch time: 18.057min, tot time: 3.156day, L_base: 7.930, L_train: 7.928, update_model: True.
+Epoch: 210, epoch time: 18.229min, tot time: 3.171day, L_base: 7.932, L_train: 7.930, update_model: True.
+Epoch: 211, epoch time: 18.232min, tot time: 3.187day, L_base: 7.925, L_train: 7.927, update_model: False.
+Epoch: 212, epoch time: 18.232min, tot time: 3.202day, L_base: 7.932, L_train: 7.931, update_model: True.
+Epoch: 213, epoch time: 18.247min, tot time: 3.217day, L_base: 7.930, L_train: 7.936, update_model: False.
+Epoch: 214, epoch time: 17.991min, tot time: 3.232day, L_base: 7.934, L_train: 7.941, update_model: False.
+Epoch: 215, epoch time: 18.031min, tot time: 3.248day, L_base: 7.935, L_train: 7.934, update_model: False.
+Epoch: 216, epoch time: 17.884min, tot time: 3.263day, L_base: 7.926, L_train: 7.924, update_model: True.
+Epoch: 217, epoch time: 17.943min, tot time: 3.278day, L_base: 7.949, L_train: 7.954, update_model: False.
+Epoch: 218, epoch time: 17.774min, tot time: 3.292day, L_base: 7.940, L_train: 7.938, update_model: True.
+Epoch: 219, epoch time: 17.556min, tot time: 3.307day, L_base: 7.932, L_train: 7.930, update_model: True.
+Epoch: 220, epoch time: 17.554min, tot time: 3.322day, L_base: 7.943, L_train: 7.941, update_model: True.
+Epoch: 221, epoch time: 17.565min, tot time: 3.336day, L_base: 7.928, L_train: 7.926, update_model: True.
+Epoch: 222, epoch time: 18.044min, tot time: 3.351day, L_base: 7.934, L_train: 7.934, update_model: False.
+Epoch: 223, epoch time: 17.964min, tot time: 3.366day, L_base: 7.924, L_train: 7.923, update_model: False.
+Epoch: 224, epoch time: 17.692min, tot time: 3.381day, L_base: 7.940, L_train: 7.947, update_model: False.
+Epoch: 225, epoch time: 17.696min, tot time: 3.396day, L_base: 7.928, L_train: 7.930, update_model: False.
+Epoch: 226, epoch time: 17.799min, tot time: 3.411day, L_base: 7.919, L_train: 7.921, update_model: False.
+Epoch: 227, epoch time: 17.891min, tot time: 3.426day, L_base: 7.961, L_train: 7.960, update_model: False.
+Epoch: 228, epoch time: 17.970min, tot time: 3.441day, L_base: 7.932, L_train: 7.935, update_model: False.
+Epoch: 229, epoch time: 17.982min, tot time: 3.456day, L_base: 7.921, L_train: 7.920, update_model: False.
+Epoch: 230, epoch time: 18.068min, tot time: 3.471day, L_base: 7.937, L_train: 7.940, update_model: False.
+Epoch: 231, epoch time: 18.015min, tot time: 3.486day, L_base: 7.917, L_train: 7.913, update_model: True.
+Epoch: 232, epoch time: 17.886min, tot time: 3.501day, L_base: 7.912, L_train: 7.913, update_model: False.
+Epoch: 233, epoch time: 17.920min, tot time: 3.516day, L_base: 7.921, L_train: 7.925, update_model: False.
+Epoch: 234, epoch time: 17.882min, tot time: 3.531day, L_base: 7.920, L_train: 7.917, update_model: True.
+Epoch: 235, epoch time: 17.909min, tot time: 3.546day, L_base: 7.933, L_train: 7.932, update_model: True.
+Epoch: 236, epoch time: 17.909min, tot time: 3.561day, L_base: 7.932, L_train: 7.931, update_model: False.
+Epoch: 237, epoch time: 17.978min, tot time: 3.576day, L_base: 7.929, L_train: 7.934, update_model: False.
+Epoch: 238, epoch time: 17.733min, tot time: 3.591day, L_base: 7.938, L_train: 7.934, update_model: True.
+Epoch: 239, epoch time: 17.825min, tot time: 3.606day, L_base: 7.930, L_train: 7.935, update_model: False.
+Epoch: 240, epoch time: 17.697min, tot time: 3.621day, L_base: 7.927, L_train: 7.928, update_model: False.
+Epoch: 241, epoch time: 17.682min, tot time: 3.635day, L_base: 7.926, L_train: 7.924, update_model: True.
+Epoch: 242, epoch time: 17.742min, tot time: 3.650day, L_base: 7.916, L_train: 7.916, update_model: False.
+Epoch: 243, epoch time: 17.648min, tot time: 3.665day, L_base: 7.933, L_train: 7.931, update_model: True.
+Epoch: 244, epoch time: 17.692min, tot time: 3.680day, L_base: 7.926, L_train: 7.924, update_model: True.
+Epoch: 245, epoch time: 17.651min, tot time: 3.695day, L_base: 7.918, L_train: 7.918, update_model: False.
+Epoch: 246, epoch time: 17.654min, tot time: 3.709day, L_base: 7.910, L_train: 7.912, update_model: False.
+Epoch: 247, epoch time: 17.660min, tot time: 3.724day, L_base: 7.931, L_train: 7.928, update_model: True.
+Epoch: 248, epoch time: 17.650min, tot time: 3.739day, L_base: 7.924, L_train: 7.922, update_model: True.
+Epoch: 249, epoch time: 17.685min, tot time: 3.754day, L_base: 7.934, L_train: 7.936, update_model: False.
+Epoch: 250, epoch time: 17.697min, tot time: 3.769day, L_base: 7.931, L_train: 7.936, update_model: False.
+Epoch: 251, epoch time: 17.693min, tot time: 3.783day, L_base: 7.925, L_train: 7.923, update_model: True.
+Epoch: 252, epoch time: 17.717min, tot time: 3.798day, L_base: 7.927, L_train: 7.923, update_model: True.
+Epoch: 253, epoch time: 17.697min, tot time: 3.813day, L_base: 7.937, L_train: 7.938, update_model: False.
+Epoch: 254, epoch time: 17.700min, tot time: 3.828day, L_base: 7.931, L_train: 7.935, update_model: False.
+Epoch: 255, epoch time: 17.699min, tot time: 3.843day, L_base: 7.940, L_train: 7.945, update_model: False.
+Epoch: 256, epoch time: 17.894min, tot time: 3.858day, L_base: 7.918, L_train: 7.924, update_model: False.
+Epoch: 257, epoch time: 18.052min, tot time: 3.873day, L_base: 7.914, L_train: 7.914, update_model: False.
+Epoch: 258, epoch time: 17.844min, tot time: 3.888day, L_base: 7.921, L_train: 7.926, update_model: False.
+Epoch: 259, epoch time: 17.773min, tot time: 3.903day, L_base: 7.947, L_train: 7.942, update_model: True.
+Epoch: 260, epoch time: 17.760min, tot time: 3.917day, L_base: 7.903, L_train: 7.908, update_model: False.
+Epoch: 261, epoch time: 17.779min, tot time: 3.932day, L_base: 7.909, L_train: 7.908, update_model: True.
+Epoch: 262, epoch time: 18.079min, tot time: 3.947day, L_base: 7.916, L_train: 7.917, update_model: False.
+Epoch: 263, epoch time: 18.088min, tot time: 3.962day, L_base: 7.919, L_train: 7.923, update_model: False.
+Epoch: 264, epoch time: 18.083min, tot time: 3.978day, L_base: 7.923, L_train: 7.931, update_model: False.
+Epoch: 265, epoch time: 18.120min, tot time: 3.993day, L_base: 7.925, L_train: 7.928, update_model: False.
+Epoch: 266, epoch time: 18.139min, tot time: 4.008day, L_base: 7.941, L_train: 7.942, update_model: False.
+Epoch: 267, epoch time: 18.128min, tot time: 4.023day, L_base: 7.918, L_train: 7.914, update_model: True.
+Epoch: 268, epoch time: 18.122min, tot time: 4.038day, L_base: 7.933, L_train: 7.932, update_model: False.
+Epoch: 269, epoch time: 18.185min, tot time: 4.053day, L_base: 7.933, L_train: 7.930, update_model: True.
+Epoch: 270, epoch time: 18.129min, tot time: 4.069day, L_base: 7.925, L_train: 7.920, update_model: True.
+Epoch: 271, epoch time: 18.107min, tot time: 4.084day, L_base: 7.920, L_train: 7.920, update_model: False.
+Epoch: 272, epoch time: 18.122min, tot time: 4.099day, L_base: 7.912, L_train: 7.912, update_model: False.
+Epoch: 273, epoch time: 18.116min, tot time: 4.114day, L_base: 7.923, L_train: 7.922, update_model: False.
+Epoch: 274, epoch time: 18.111min, tot time: 4.129day, L_base: 7.929, L_train: 7.935, update_model: False.
+Epoch: 275, epoch time: 18.018min, tot time: 4.144day, L_base: 7.946, L_train: 7.949, update_model: False.
+Epoch: 276, epoch time: 18.009min, tot time: 4.159day, L_base: 7.919, L_train: 7.920, update_model: False.
+Epoch: 277, epoch time: 17.980min, tot time: 4.174day, L_base: 7.920, L_train: 7.918, update_model: True.
+Epoch: 278, epoch time: 18.056min, tot time: 4.189day, L_base: 7.917, L_train: 7.914, update_model: True.
+Epoch: 279, epoch time: 18.054min, tot time: 4.204day, L_base: 7.934, L_train: 7.927, update_model: True.
+Epoch: 280, epoch time: 18.008min, tot time: 4.220day, L_base: 7.922, L_train: 7.921, update_model: True.
+Epoch: 281, epoch time: 18.026min, tot time: 4.235day, L_base: 7.923, L_train: 7.926, update_model: False.
+Epoch: 282, epoch time: 18.027min, tot time: 4.250day, L_base: 7.923, L_train: 7.923, update_model: False.
+Epoch: 283, epoch time: 18.014min, tot time: 4.265day, L_base: 7.930, L_train: 7.930, update_model: False.
+Epoch: 284, epoch time: 17.979min, tot time: 4.280day, L_base: 7.931, L_train: 7.933, update_model: False.
+Epoch: 285, epoch time: 18.027min, tot time: 4.295day, L_base: 7.908, L_train: 7.909, update_model: False.
+Epoch: 286, epoch time: 18.022min, tot time: 4.310day, L_base: 7.930, L_train: 7.926, update_model: True.
+Epoch: 287, epoch time: 18.130min, tot time: 4.325day, L_base: 7.906, L_train: 7.905, update_model: True.
+Epoch: 288, epoch time: 18.034min, tot time: 4.340day, L_base: 7.958, L_train: 7.952, update_model: True.
+Epoch: 289, epoch time: 18.017min, tot time: 4.355day, L_base: 7.919, L_train: 7.924, update_model: False.
+Epoch: 290, epoch time: 18.035min, tot time: 4.370day, L_base: 7.912, L_train: 7.910, update_model: True.
+Epoch: 291, epoch time: 18.041min, tot time: 4.385day, L_base: 7.911, L_train: 7.914, update_model: False.
+Epoch: 292, epoch time: 18.025min, tot time: 4.400day, L_base: 7.908, L_train: 7.913, update_model: False.
+Epoch: 293, epoch time: 18.193min, tot time: 4.416day, L_base: 7.915, L_train: 7.920, update_model: False.
+Epoch: 294, epoch time: 18.126min, tot time: 4.431day, L_base: 7.938, L_train: 7.935, update_model: True.
+Epoch: 295, epoch time: 18.113min, tot time: 4.446day, L_base: 7.920, L_train: 7.920, update_model: False.
+Epoch: 296, epoch time: 17.831min, tot time: 4.461day, L_base: 7.917, L_train: 7.921, update_model: False.
+Epoch: 297, epoch time: 17.738min, tot time: 4.476day, L_base: 7.941, L_train: 7.936, update_model: True.
+Epoch: 298, epoch time: 17.724min, tot time: 4.490day, L_base: 7.931, L_train: 7.935, update_model: False.
+Epoch: 299, epoch time: 17.737min, tot time: 4.505day, L_base: 7.922, L_train: 7.920, update_model: True.
+Epoch: 300, epoch time: 17.731min, tot time: 4.520day, L_base: 7.907, L_train: 7.910, update_model: False.
+Epoch: 301, epoch time: 17.729min, tot time: 4.535day, L_base: 7.922, L_train: 7.918, update_model: True.
+Epoch: 302, epoch time: 17.728min, tot time: 4.550day, L_base: 7.923, L_train: 7.921, update_model: True.
+Epoch: 303, epoch time: 17.777min, tot time: 4.565day, L_base: 7.919, L_train: 7.915, update_model: True.
+Epoch: 304, epoch time: 17.597min, tot time: 4.579day, L_base: 7.945, L_train: 7.949, update_model: False.
+Epoch: 305, epoch time: 17.692min, tot time: 4.594day, L_base: 7.926, L_train: 7.928, update_model: False.
+Epoch: 306, epoch time: 18.258min, tot time: 4.609day, L_base: 7.911, L_train: 7.909, update_model: True.
+Epoch: 307, epoch time: 18.261min, tot time: 4.625day, L_base: 7.936, L_train: 7.937, update_model: False.
+Epoch: 308, epoch time: 18.269min, tot time: 4.640day, L_base: 7.924, L_train: 7.926, update_model: False.
+Epoch: 309, epoch time: 18.001min, tot time: 4.655day, L_base: 7.920, L_train: 7.921, update_model: False.
+Epoch: 310, epoch time: 18.004min, tot time: 4.670day, L_base: 7.930, L_train: 7.926, update_model: True.
+Epoch: 311, epoch time: 18.452min, tot time: 4.686day, L_base: 7.925, L_train: 7.919, update_model: True.
+Epoch: 312, epoch time: 17.902min, tot time: 4.701day, L_base: 7.930, L_train: 7.928, update_model: True.
+Epoch: 313, epoch time: 18.001min, tot time: 4.716day, L_base: 7.928, L_train: 7.925, update_model: True.
+Epoch: 314, epoch time: 17.843min, tot time: 4.731day, L_base: 7.931, L_train: 7.935, update_model: False.
+Epoch: 315, epoch time: 18.000min, tot time: 4.746day, L_base: 7.913, L_train: 7.916, update_model: False.
+Epoch: 316, epoch time: 17.694min, tot time: 4.761day, L_base: 7.915, L_train: 7.909, update_model: True.
+Epoch: 317, epoch time: 18.012min, tot time: 4.776day, L_base: 7.935, L_train: 7.939, update_model: False.
+Epoch: 318, epoch time: 18.001min, tot time: 4.791day, L_base: 7.926, L_train: 7.924, update_model: True.
+Epoch: 319, epoch time: 18.000min, tot time: 4.806day, L_base: 7.902, L_train: 7.908, update_model: False.
+Epoch: 320, epoch time: 17.997min, tot time: 4.821day, L_base: 7.921, L_train: 7.921, update_model: False.
+Epoch: 321, epoch time: 17.996min, tot time: 4.836day, L_base: 7.935, L_train: 7.933, update_model: True.
+Epoch: 322, epoch time: 17.712min, tot time: 4.851day, L_base: 7.919, L_train: 7.916, update_model: True.
+Epoch: 323, epoch time: 17.706min, tot time: 4.866day, L_base: 7.921, L_train: 7.922, update_model: False.
+Epoch: 324, epoch time: 17.921min, tot time: 4.881day, L_base: 7.931, L_train: 7.924, update_model: True.
+Epoch: 325, epoch time: 17.905min, tot time: 4.896day, L_base: 7.913, L_train: 7.912, update_model: True.
+Epoch: 326, epoch time: 17.937min, tot time: 4.911day, L_base: 7.913, L_train: 7.914, update_model: False.
+Epoch: 327, epoch time: 17.909min, tot time: 4.926day, L_base: 7.914, L_train: 7.915, update_model: False.
+Epoch: 328, epoch time: 17.987min, tot time: 4.941day, L_base: 7.939, L_train: 7.935, update_model: True.
+Epoch: 329, epoch time: 18.299min, tot time: 4.956day, L_base: 7.917, L_train: 7.918, update_model: False.
+Epoch: 330, epoch time: 18.063min, tot time: 4.971day, L_base: 7.930, L_train: 7.930, update_model: False.
+Epoch: 331, epoch time: 17.943min, tot time: 4.986day, L_base: 7.927, L_train: 7.924, update_model: True.
+Epoch: 332, epoch time: 18.080min, tot time: 5.001day, L_base: 7.901, L_train: 7.902, update_model: False.
