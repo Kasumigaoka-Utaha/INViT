@@ -111,7 +111,8 @@ python train.py --problem CVRP --data_path={} [--]
 We have provided automatic test after every training. If you want to test the performance independently, for TSP,
 
 ```
-python train.py --problem TSP --nb_epochs 0 --data_path={} [--] --checkpoint_model={} [--] 
+python train.py --problem TSP --nb_epochs 0 --data_path={} [--] --checkpoint_model={} [--]
+# python train.py --problem TSP --nb_epochs 0 --checkpoint_model 24-01-17--09-14-44-n100-gpu0
 ```
 
 for CVRP,
