@@ -118,7 +118,8 @@ python train.py --problem TSP --nb_epochs 0 --data_path={} [--] --checkpoint_mod
 for CVRP,
 
 ```
-python train.py --problem CVRP --nb_epochs 0 --data_path={} [--] --checkpoint_model={} [--] 
+python train.py --problem CVRP --nb_epochs 0 --data_path={} [--] --checkpoint_model={} [--]
+# python train.py --problem CVRP --nb_epochs 0 --checkpoint_model 24-01-25--20-50-39-n100-gpu0
 ```
 
 Note that before testing the model, the parameter should be consistent with the logs of pretrained checkpoint.
