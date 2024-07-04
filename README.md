@@ -1,5 +1,7 @@
 # INViT
-Official Implementation of paper: INViT: A Generalizable Routing Problem Solver with Invariant Nested View Transformer
+Official Implementation of paper: INViT: A Generalizable Routing Problem Solver with Invariant Nested View Transformer.
+![image](images/INViT.png)
+[Paper link](https://arxiv.org/abs/2402.02317)
 
 ## Installations
 
